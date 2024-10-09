@@ -1,0 +1,68 @@
+{
+  "error": {
+    "http": {
+      "internalServerError": "Internal server error",
+      "unauthorizedAccess": "Unauthorized access"
+    },
+    "validation": {
+      "invalidData": "Invalid data provided.",
+      "invalidType": "{{field}} must be a {{expected}}.",
+      "tooSmall": "{{field}} is too small. Minimum is {{min}}.",
+      "tooBig": "{{field}} is too large. Maximum is {{max}}.",
+      "custom": "Custom validation failed for {{field}}: {{message}}.",
+      "unknown": "Unknown validation error on {{field}}.",
+      "invalidLiteral": "{{field}} must be exactly {{expected}}.",
+      "invalidEnumValue": "{{field}} must be one of the following: {{options}}.",
+      "invalidDate": "{{field}} must be a valid date.",
+      "invalidString": "{{field}} must be a valid string.",
+      "invalidEmail": "{{field}} must be a valid email address.",
+      "invalidUrl": "{{field}} must be a valid URL.",
+      "invalidUnion": "{{field}} does not match any of the allowed types.",
+      "invalidUnionDiscriminator": "{{field}} has an invalid discriminator.",
+      "notMultipleOf": "{{field}} must be a multiple of {{multiple}}.",
+      "notFinite": "{{field}} must be a finite number.",
+      "unrecognizedKeys": "Unrecognized keys in {{field}}: {{keys}}."
+    },
+    "prisma": {
+      "uniqueConstraint": "A record with this {{field}} already exists.",
+      "foreignKeyConstraint": "The {{field}} is invalid due to a foreign key constraint.",
+      "constraintViolation": "A constraint violation occurred on {{field}}.",
+      "recordNotFound": "The requested record could not be found.",
+      "valueTooLong": "The value for {{field}} is too long.",
+      "queryInterpretation": "An error occurred while interpreting the query.",
+      "unknown": "An unknown database error occurred."
+    },
+    "inputTypes": {
+      "string": "string",
+      "date": "date",
+      "number": "number",
+      "boolean": "boolean",
+      "array": "array",
+      "object": "object",
+      "null": "null"
+    }
+  },
+  "auth": {
+    "message": {
+      "logout": "Logged out successfully"
+    },
+    "error": {
+      "userExists": "User already exists",
+      "invalidCredentials": "Invalid username/password",
+      "unauthorized": "Invalid or expired token",
+      "tokenExpired": "Token expired"
+    }
+  },
+  "user": {
+    "message": {
+      "deleted": "User deleted successfully.",
+      "passwordReset": "Password reset successfully."
+    },
+    "error": {
+      "notFound": "User not found.",
+      "update": "Failed to update user.",
+      "usernameAlreadyExists": "Failed to create user, the username already exists.",
+      "passwordMismatch": "Failed to reset password because the current password is incorrect."
+    }
+  }
+}

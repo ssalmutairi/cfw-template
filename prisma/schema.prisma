@@ -1,0 +1,35 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+// Looking for ways to speed up your queries, or scale easily with your serverless or edge functions?
+// Try Prisma Accelerate: https://pris.ly/cli/accelerate-init
+
+generator client {
+  provider        = "prisma-client-js"
+  previewFeatures = ["driverAdapters"]
+}
+
+datasource db {
+  provider = "sqlite"
+  url      = env("DATABASE_URL")
+}
+
+generator zod {
+  provider              = "zod-prisma"
+  output                = "./zod" // (default) the directory where generated zod schemas will be saved  
+  relationModel         = false // Do not generate related model
+  modelCase             = "camelCase" // Output models using camel case (ex. userModel, postModel)
+  modelSuffix           = "Model" // (default) Suffix to apply to your prisma models when naming Zod schemas
+  useDecimalJs          = true // represent the prisma Decimal type using Decimal.js (as Prisma does)
+  prismaJsonNullability = true // (default) uses prisma's scheme for JSON field nullability
+}
+
+model User {
+  id        Int      @id @default(autoincrement())
+  name      String
+  password  String
+  username  String   @unique
+  email     String   @unique
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+}

@@ -1,0 +1,4 @@
+
+JWT_SECRET="my-secret-key"
+DB_NAME="my-database-name"
+DB_ID="xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"

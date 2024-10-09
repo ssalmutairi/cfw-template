@@ -1,0 +1,15 @@
+{
+  "compilerOptions": {
+    "outDir": "./dist", // Output directory for compiled files
+    "rootDir": "./", // Root directory of your source files
+    "strict": true, // Enable strict type checking
+    "esModuleInterop": true, // Support for importing CommonJS modules
+    "moduleResolution": "node", // Module resolution strategy
+    "resolveJsonModule": true, // Allow importing .json files
+    "skipLibCheck": true, // Skip type checking of library files
+    "jsx": "react-jsx",
+    "jsxImportSource": "hono/jsx"
+  },
+  "include": ["server.ts", "src/**/*.ts", "prisma/**/*.ts"], // Include your source files (adjust as needed)
+  "exclude": ["node_modules"] // Exclude node_modules
+}

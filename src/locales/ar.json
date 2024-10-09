@@ -1,0 +1,69 @@
+{
+  "error": {
+    "http": {
+      "internalServerError": "خطأ داخلي في الخادم",
+      "unauthorizedAccess": "تم رفض الوصول"
+    },
+
+    "validation": {
+      "invalidData": "البيانات غير صالحة.",
+      "invalidType": "{{field}} يجب أن يكون {{expected}}.",
+      "tooSmall": "{{field}} صغير جداً. الحد الأدنى هو {{min}}.",
+      "tooBig": "{{field}} كبير جداً. الحد الأقصى هو {{max}}.",
+      "custom": "فشل التحقق المخصص لـ {{field}}: {{message}}.",
+      "unknown": "خطأ تحقق غير معروف على {{field}}.",
+      "invalidLiteral": "{{field}} يجب أن يكون بالضبط {{expected}}.",
+      "invalidEnumValue": "{{field}} يجب أن يكون واحدًا من القيم التالية: {{options}}.",
+      "invalidDate": "{{field}} يجب أن يكون تاريخًا صالحًا.",
+      "invalidString": "{{field}} يجب أن يكون سلسلة نصية صالحة.",
+      "invalidEmail": "{{field}} يجب أن يكون عنوان بريد إلكتروني صالح.",
+      "invalidUrl": "{{field}} يجب أن يكون عنوان URL صالح.",
+      "invalidUnion": "{{field}} لا يتطابق مع أي من الأنواع المسموح بها.",
+      "invalidUnionDiscriminator": "{{field}} يحتوي على مميز غير صالح.",
+      "notMultipleOf": "{{field}} يجب أن يكون مضاعفًا لـ {{multiple}}.",
+      "notFinite": "{{field}} يجب أن يكون رقمًا محدودًا.",
+      "unrecognizedKeys": "مفاتيح غير معروفة في {{field}}: {{keys}}."
+    },
+    "prisma": {
+      "uniqueConstraint": "يوجد سجل بهذا {{field}} بالفعل.",
+      "foreignKeyConstraint": "الـ {{field}} غير صالح بسبب قيد مفتاح خارجي.",
+      "constraintViolation": "حدث خرق في القيد على {{field}}.",
+      "recordNotFound": "تعذر العثور على السجل المطلوب.",
+      "valueTooLong": "القيمة لـ {{field}} طويلة جداً.",
+      "queryInterpretation": "حدث خطأ أثناء تفسير الاستعلام.",
+      "unknown": "حدث خطأ غير معروف في قاعدة البيانات."
+    },
+    "inputTypes": {
+      "string": "نص",
+      "date": "تاريخ",
+      "number": "رقم",
+      "boolean": "منطقي",
+      "array": "مصفوفة",
+      "object": "كائن",
+      "null": "فارغ"
+    }
+  },
+  "auth": {
+    "message": {
+      "logout": "تم تسجيل الخروج بنجاح"
+    },
+    "error": {
+      "userExists": "المستخدم موجود بالفعل",
+      "invalidCredentials": "اسم المستخدم/كلمة المرور غير صالحة",
+      "unauthorized": "الرمز غير صالح أو منتهي الصلاحية",
+      "tokenExpired": "انتهت صلاحية الرمز"
+    }
+  },
+  "user": {
+    "message": {
+      "deleted": "تم حذف المستخدم بنجاح.",
+      "passwordReset": "تمت إعادة تعيين كلمة المرور بنجاح."
+    },
+    "error": {
+      "notFound": "المستخدم غير موجود.",
+      "update": "فشل تحديث المستخدم.",
+      "usernameAlreadyExists": "فشل إنشاء المستخدم، اسم المستخدم موجود بالفعل.",
+      "passwordMismatch": "فشل إعادة تعيين كلمة المرور لأن كلمة المرور الحالية غير صحيحة."
+    }
+  }
+}

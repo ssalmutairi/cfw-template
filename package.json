@@ -1,0 +1,31 @@
+{
+  "name": "cfw-template",
+  "version": "1.0.0",
+  "scripts": {
+    "dev": "wrangler dev",
+    "lint": "eslint . --ignore-pattern \".wrangler/*\"",
+    "format": "prettier --write .",
+    "deploy": "wrangler deploy --minify"
+  },
+  "dependencies": {
+    "@hono/swagger-ui": "^0.4.1",
+    "@hono/zod-openapi": "^0.16.4",
+    "@prisma/adapter-d1": "^5.20.0",
+    "@prisma/client": "^5.20.0",
+    "hono": "^4.6.3",
+    "hono-pino-logger": "^1.0.0",
+    "i18next": "^23.15.2",
+    "i18next-fs-backend": "^2.3.2",
+    "i18next-http-middleware": "^3.6.0",
+    "prisma": "^5.20.0",
+    "zod-prisma": "^0.5.4"
+  },
+  "devDependencies": {
+    "@cloudflare/workers-types": "^4.20241004.0",
+    "@eslint/js": "^9.12.0",
+    "eslint": "^9.12.0",
+    "typescript": "^5.6.2",
+    "typescript-eslint": "^8.8.1",
+    "wrangler": "^3.80.2"
+  }
+}

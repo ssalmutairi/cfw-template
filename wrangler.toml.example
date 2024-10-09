@@ -1,0 +1,29 @@
+name = "cfw-template"
+main = "src/app.ts"
+compatibility_date = "2024-10-08"
+compatibility_flags = [ "nodejs_compat" ]
+
+# wrangler.toml (wrangler v3.78.6^)
+
+[observability]
+enabled = true
+
+[vars]
+JWT_SECRET = "my-secret-key"
+
+[[d1_databases]]
+binding = "DB"
+database_name = "database-name"
+database_id = "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
+
+# [[kv_namespaces]]
+# binding = "MY_KV_NAMESPACE"
+# id = "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
+
+# [[r2_buckets]]
+# binding = "MY_BUCKET"
+# bucket_name = "my-bucket"
+
+# [ai]
+# binding = "AI"
+
